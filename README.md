@@ -61,7 +61,7 @@ Enabled via *System Settings → Window Rules*:
 
 ## My terminal
 
-![Terminal](public/termianl.png)
+![Terminal](public/terminal.png)
 
 ### Terminal Tools
 
