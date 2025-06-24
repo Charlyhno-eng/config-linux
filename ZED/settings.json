@@ -1,0 +1,57 @@
+ {
+  "features": {
+    "edit_prediction_provider": "supermaven"
+  },
+  "agent": {
+    "always_allow_tool_actions": true,
+    "default_model": {
+      "provider": "google",
+      "model": "gemini-2.0-flash"
+    },
+    "inline_assistant_model": {
+      "provider": "google",
+      "model": "gemini-2.0-flash"
+    },
+    "version": "2",
+    "default_profile": "write"
+  },
+  "language_models": {
+    "google": {
+      "available_models": [
+        {
+          "name": "gemini-1.5-flash-latest",
+          "display_name": "Gemini 1.5 Flash (Latest)",
+          "max_tokens": 1000000
+        }
+      ]
+    }
+  },
+  "toolbar": {
+    "quick_actions": false,
+    "selections_menu": false
+  },
+  "hide_mouse": "on_typing_and_movement",
+  "show_edit_predictions": true,
+  "theme": "Ayu Dark",
+  "telemetry": {
+    "metrics": false,
+    "diagnostics": false
+  },
+  "scrollbar": {
+    "show": "never"
+  },
+  "indent_guides": {
+    "enabled": true,
+    "coloring": "indent_aware"
+  },
+  "preview_tabs": {
+    "enabled": false
+  },
+  "git": {
+    "git_gutter": "tracked_files",
+    "inline_blame": {
+      "enabled": true
+    }
+  }
+}
+

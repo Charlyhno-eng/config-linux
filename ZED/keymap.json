@@ -1,0 +1,15 @@
+[
+  {
+    "context": "Workspace",
+    "bindings": {
+      //
+    }
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "ctrl-y": "assistant::InlineAssist"
+    }
+  }
+]
+ 
