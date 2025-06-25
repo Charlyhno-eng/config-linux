@@ -44,9 +44,10 @@ alias install='sudo apt install'
 alias remove='sudo apt remove'
 alias cat='batcat'
 alias szrc='source ~/.zshrc'
+alias goszrc='nano ~/.zshrc'
 alias docs='cd ~/Documents'
-alias techno='mpv ~/Musique/Techno/*.mp3'
-alias chill='mpv ~/Musique/Chill/*.mp3'
+alias techno='mpv --shuffle --loop-playlist ~/Musique/Techno/*.mp3'
+alias chill='mpv --shuffle --loop-playlist ~/Musique/Chill/*.mp3'
 
 # Git alias
 alias gs='git status'
