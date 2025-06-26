@@ -55,7 +55,7 @@ alias szrc='source ~/.zshrc'
 alias goszrc='nano ~/.zshrc'
 
 alias docs='cd ~/Documents'
-alias projets='cd ~/Documents/projets'
+alias projets='cd ~/Documents/Projets'
 alias techno='mpv --shuffle --loop-playlist ~/Musique/Techno/*.mp3'
 alias chill='mpv --shuffle --loop-playlist ~/Musique/Chill/*.mp3'
 
