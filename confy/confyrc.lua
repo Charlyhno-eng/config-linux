@@ -19,7 +19,8 @@ conky.config = {
     alignment = 'top_right',
     gap_x = 30,
     gap_y = 30,
-    minimum_width = 300, minimum_height = 0,
+    minimum_width = 300,
+    minimum_height = 0,
 
     -- Background color (fond violet foncé)
     own_window_colour = '#1a1032',
@@ -64,8 +65,8 @@ ${color1}Swap: ${color}$swap / $swapmax ${swapbar 8,200}
 
 ${color1}Disk Root: ${color}${fs_used /} / ${fs_size /} ${fs_bar 8,200 /}
 
-${color1}Net ↓ ${color}${downspeedf wlo1} KiB/s ${color1}↑ ${color}${upspeedf wlp0s20f3} KiB/s
-${downspeedgraph wlo1 32,150 ff0000 00ff00} ${upspeedgraph wlo1 32,150 00ff00 ff0000}
+${color1}Net ↓ ${color}${downspeedf wlp0s20f3} KiB/s ${color1}↑ ${color}${upspeedf wlp0s20f3} KiB/s
+${downspeedgraph wlp0s20f3 32,150 ff0000 00ff00} ${upspeedgraph wlp0s20f3 32,150 00ff00 ff0000}
 
 ${color}${hr}
 ]];
