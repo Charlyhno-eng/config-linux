@@ -2,7 +2,7 @@
 
 My personal Linux Mint setup with KDE Plasma and various tools.
 
-![Main Screen Preview](public/main_screen.png)
+![Main Screen Preview](public/screen_principal.png)
 
 ## KDE Plasma Configuration
 
