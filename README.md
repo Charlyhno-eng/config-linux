@@ -29,12 +29,9 @@ My personal Linux Mint setup with KDE Plasma and various tools.
 
 ### Widgets
 
-All widgets are native to KDE Plasma:
+Folder Shortcuts (for `~/Projets`). This widget is native to KDE Plasma.
 
-- CPU Usage Monitor
-- Memory Usage Monitor
-- Disk Usage Monitor
-- Folder Shortcuts (for `~/Projets`)
+The widget to track CPU, cores, RAM, root disk and network was created via confy and is not native to KDE.
 
 ### Window Transparency
 
