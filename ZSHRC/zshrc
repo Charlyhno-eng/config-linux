@@ -10,7 +10,6 @@ export ZSH="$HOME/.oh-my-zsh"
 
 # Path et couleur de Kitty
 export PATH="$HOME/.local/kitty.app/bin:$PATH"
-export TERM=xterm-kitty
 
 # fzf avec fd (si installé)
 export FZF_DEFAULT_COMMAND='find . -type f'
