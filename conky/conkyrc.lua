@@ -57,7 +57,6 @@ ${color1}Core 2:    ${color}${cpu cpu2}%                ${color2}${cpubar cpu2 8
 ${color1}Temp CPU: ${color}${execi 10 sensors | grep 'Package id 0' | awk '{print $4}'}
 
 ${color1}RAM:       ${color}$mem/$memmax   ${color3}${membar 8,200}
-${color1}Swap:      ${color}$swap/$swapmax        ${swapbar 8,200}
 ${color1}Disk Root: ${color}${fs_used /}/${fs_size /}     ${fs_bar 8,200 /}
 
 ${color1}Net ↓ ${color}${downspeedf wlp0s20f3} KiB/s ${color1}            ↑ ${color}${upspeedf wlp0s20f3} KiB/s
