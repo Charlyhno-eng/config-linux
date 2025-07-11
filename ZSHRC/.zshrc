@@ -8,8 +8,47 @@ fi
 # Path vers Oh My Zsh
 export ZSH="$HOME/.oh-my-zsh"
 
+# Path et couleur de Kitty
+export PATH="$HOME/.local/kitty.app/bin:$PATH"
+export TERM=xterm-kitty
+
+# fzf avec fd (si installé)
+export FZF_DEFAULT_COMMAND='find . -type f'
+export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+export PATH=$HOME/.local/bin:$PATH
+
 # Thème : tu peux remplacer par "agnoster", "robbyrussell", ou "powerlevel10k/powerlevel10k" si installé
 ZSH_THEME="powerlevel10k/powerlevel10k"
+
+#Thème néon - https://github.com/Roboron3042/Cyberpunk-Neon/blob/master/terminal-apps/zsh/powerlevel9k
+POWERLEVEL9K_MODE="nerdfont-complete"
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir rbenv vcs)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator background_jobs history time)
+POWERLEVEL9K_CONTEXT_TEMPLATE=$'\ue795'
+POWERLEVEL9K_CONTEXT_DEFAULT_FOREGROUND='#0abdc6'
+POWERLEVEL9K_CONTEXT_DEFAULT_BACKGROUND='#321959'
+POWERLEVEL9K_DIR_HOME_FOREGROUND='#0abdc6'
+POWERLEVEL9K_DIR_HOME_BACKGROUND='#0b2956'
+POWERLEVEL9K_DIR_HOME_SUBFOLDER_FOREGROUND='#0abdc6'
+POWERLEVEL9K_DIR_HOME_SUBFOLDER_BACKGROUND='#0b2956'
+POWERLEVEL9K_DIR_DEFAULT_FOREGROUND='#0abdc6'
+POWERLEVEL9K_DIR_DEFAULT_BACKGROUND='#0b2956'
+POWERLEVEL9K_DIR_ETC_FOREGROUND='#0abdc6'
+POWERLEVEL9K_DIR_ETC_BACKGROUND='#0b2956'
+POWERLEVEL9K_VCS_CLEAN_FOREGROUND='#ea00d9'
+POWERLEVEL9K_VCS_CLEAN_BACKGROUND='#321959'
+POWERLEVEL9K_VCS_UNTRACKED_FOREGROUND='#f57800'
+POWERLEVEL9K_VCS_UNTRACKED_BACKGROUND='#321959'
+POWERLEVEL9K_VCS_MODIFIED_FOREGROUND='#00ff00'
+POWERLEVEL9K_VCS_MODIFIED_BACKGROUND='#321959'
+POWERLEVEL9K_STATUS_OK_BACKGROUND='#321959'
+POWERLEVEL9K_STATUS_ERROR_FOREGROUND='#ff0000'
+POWERLEVEL9K_STATUS_ERROR_BACKGROUND='#321959'
+POWERLEVEL9K_HISTORY_BACKGROUND='#0b2956'
+POWERLEVEL9K_HISTORY_FOREGROUND='#0abdc6'
+POWERLEVEL9K_TIME_BACKGROUND='#321959'
+POWERLEVEL9K_TIME_FOREGROUND='#ea00d9'
+POWERLEVEL9K_TIME_FORMAT='%D{%H:%M}'
 
 # Plugins Oh My Zsh
 plugins=(
@@ -53,7 +92,9 @@ alias c='clear'
 alias cat='batcat'
 alias szsh='source ~/.zshrc'
 alias gozsh='nano ~/.zshrc'
+alias top='btop'
 
+alias kittyconf='nano ~/.config/kitty/kitty.conf'
 alias docs='cd ~/Documents'
 alias projets='cd ~/Documents/Projets'
 alias techno='mpv --shuffle --loop-playlist ~/Musique/Techno/*.mp3'
@@ -89,19 +130,8 @@ alias nextbuild='npm run build'
 # Prompt multicouleur plus lisible (si pas de powerlevel10k)
 autoload -U colors && colors
 
-# Désactiver la correction automatique des commandes
-setopt NO_CORRECT
-
-# fzf avec fd (si installé)
-export FZF_DEFAULT_COMMAND='find . -type f'
-export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
-export PATH=$HOME/.local/bin:$PATH
-
 # Plugins
 plugins=(
   git
   zsh-autosuggestions
 )
-
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
