@@ -56,12 +56,12 @@ ${color}${hr}
 ${color1}Time: ${color}${time %H:%M:%S}   ${color1}Uptime:${color} $uptime
 ${color1}Hostname: ${color}$nodename   ${color1}Kernel: ${color}$kernel
 
-${color1}CPU ${color}${cpu cpu0}% ${color3}${cpubar cpu0 10,200}
-${color1}Core 1: ${color}${cpu cpu1}%  ${color2}${cpubar cpu1 8,100}
-${color1}Core 2: ${color}${cpu cpu2}%  ${color2}${cpubar cpu2 8,100}
+${color1}CPU ${color}${cpu cpu0}%      ${color3}${cpubar cpu0 10,150}
+${color1}Core 1: ${color}${cpu cpu1}%  ${color2}${cpubar cpu1 8,150}
+${color1}Core 2: ${color}${cpu cpu2}%  ${color2}${cpubar cpu2 8,150}
 
 ${color1}RAM: ${color}$mem / $memmax ${color3}${membar 8,200}
-${color1}Swap: ${color}$swap / $swapmax ${swapbar 8,200}
+${color1}Swap: ${color}$swap / $swapmax     ${swapbar 8,200}
 
 ${color1}Disk Root: ${color}${fs_used /} / ${fs_size /} ${fs_bar 8,200 /}
 
