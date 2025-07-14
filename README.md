@@ -2,7 +2,7 @@
 
 My personal Linux Mint setup with KDE Plasma and various tools.
 
-![Main Screen Preview](public/principal.png)
+![Main Screen Preview](public/main_screen.png)
 
 ## KDE Plasma Configuration
 
@@ -33,7 +33,7 @@ Folder Shortcuts (for `~/Projets`). This widget is native to KDE Plasma.
 
 The widget to track CPU, cores, RAM, root disk and network was created via conky and is not native to KDE.
 
-![Widget](public/conky.png)
+![Widget](public/conky_widget.png)
 
 ### Window Transparency
 
