@@ -2,7 +2,7 @@
 
 My personal Linux Mint setup with KDE Plasma and various tools.
 
-![Main Screen Preview](public/principal_screen.png)
+![Main Screen Preview](public/main_screen.png)
 
 ## KDE Plasma Configuration
 
@@ -60,7 +60,7 @@ Enabled via *System Settings → Window Rules*:
 
 ## My terminal
 
-![Terminal](public/terminal.png)
+![Terminal](public/kitty_terminal.png)
 
 ### Terminal Tools
 
