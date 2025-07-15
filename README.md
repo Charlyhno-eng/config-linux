@@ -29,23 +29,9 @@ My personal Linux Mint setup with KDE Plasma and various tools.
 
 ### Widgets
 
-Folder Shortcuts (for `~/Projets`). This widget is native to KDE Plasma.
-
 The widget to track CPU, cores, RAM, root disk and network was created via conky and is not native to KDE.
 
 ![Widget](public/conky.png)
-
-### Window Transparency
-
-Enabled via *System Settings → Window Rules*:
-
-- Transparent windows for **Dolphin**
-- Transparent windows for **Obsidian**
-- Transparent windows for **Zed**
-
-![Dolphin](public/opacity_dolphin.png)
-![Obsidian](public/opacity_obsidian.png)
-![Zed](public/opacity_zed.png)
 
 ---
 
@@ -53,6 +39,14 @@ Enabled via *System Settings → Window Rules*:
 
 - **AI:** `Gemini-2.0-flash`
 - **AI extensions:** Super Maven
+
+### Zed theme
+
+Place theme.json into .config/zed/themes folder
+
+Set "theme": "Rosé Pine" in .config/zed/settings.json
+
+![Zed](public/opacity_zed.png)
 
 > Note: More customization details to be added if configuration files are exported.
 
@@ -104,6 +98,8 @@ Here are two YouTube videos that helped me customize my KDE Plasma setup:
 
 - [Make KDE Plasma Desktop Look Aesthetic](https://www.youtube.com/watch?v=AFqPCgRQmGc)
   Aesthetic tweaks, theming tips, and layout inspiration for a clean and modern KDE desktop.
+
+- [Zed theme Rose Piné](https://github.com/huahuadeliaoliao/rose-pine-zed-transparent/tree/main)
 
 ---
 

@@ -1,4 +1,4 @@
- {
+{
   "features": {
     "edit_prediction_provider": "supermaven"
   },
@@ -12,8 +12,7 @@
       "provider": "google",
       "model": "gemini-2.0-flash"
     },
-    "version": "2",
-    "default_profile": "write"
+    "default_profile": "ask"
   },
   "language_models": {
     "google": {
@@ -32,7 +31,7 @@
   },
   "hide_mouse": "on_typing_and_movement",
   "show_edit_predictions": true,
-  "theme": "Ayu Dark",
+  "theme": "Rosé Pine",
   "telemetry": {
     "metrics": false,
     "diagnostics": false
@@ -54,4 +53,3 @@
     }
   }
 }
-
