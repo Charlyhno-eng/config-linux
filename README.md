@@ -2,7 +2,7 @@
 
 My personal Linux Mint setup with KDE Plasma and various tools.
 
-![Main Screen Preview](public/main_screen.png)
+![Main Screen Preview](public/full_screen.png)
 
 ## KDE Plasma Configuration
 
@@ -31,8 +31,6 @@ My personal Linux Mint setup with KDE Plasma and various tools.
 
 The widget to track CPU, cores, RAM, root disk and network was created via conky and is not native to KDE.
 
-![Widget](public/conky.png)
-
 ---
 
 ## Zed Editor Configuration
@@ -46,7 +44,7 @@ Place theme.json into .config/zed/themes folder
 
 Set "theme": "Rosé Pine" in .config/zed/settings.json
 
-![Zed](public/opacity_zed.png)
+![Zed](public/zed_ide.png)
 
 > Note: More customization details to be added if configuration files are exported.
 

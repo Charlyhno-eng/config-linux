@@ -1,4 +1,11 @@
-#!/bin/sh
-sleep 20
-conky -d -c ~/.conkyrc
-exit
+#!/bin/bash
+
+sleep 5
+
+killall conky
+
+conky -c ~/widgets_conky/.conkyrc_cpu_mem.lua &
+conky -c ~/widgets_conky/.conkyrc_net.lua &
+conky -c ~/widgets_conky/.conkyrc_info.lua &
+
+exit 0
