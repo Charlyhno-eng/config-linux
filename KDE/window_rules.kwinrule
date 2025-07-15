@@ -1,0 +1,29 @@
+[Padding plein écran Firefox]
+Description=Padding plein écran Firefox
+position=30,5
+positionrule=3
+size=1885,1070
+sizerule=3
+wmclass=firefox
+wmclasscomplete=true
+wmclassmatch=2
+
+[Padding plein écran Obsidian]
+Description=Padding plein écran Obsidian
+position=30,5
+positionrule=3
+size=1885,1070
+sizerule=3
+wmclass=obsidian
+wmclasscomplete=true
+wmclassmatch=2
+
+[Padding plein écran Zed]
+Description=Padding plein écran Zed
+position=30,5
+positionrule=3
+size=1885,1070
+sizerule=3
+wmclass=zed
+wmclasscomplete=true
+wmclassmatch=2
