@@ -52,7 +52,7 @@ Set "theme": "Rosé Pine" in .config/zed/settings.json
 
 ## My terminal
 
-![Terminal](public/kitty_terminal.png)
+![Terminal](public/terminal_kitty.png)
 
 ### Terminal Tools
 

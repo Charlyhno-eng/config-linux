@@ -42,5 +42,8 @@ ${color2}Distro:${color1} ${exec lsb_release -d | cut -f2}
 ${color2}Uptime:${color1} $uptime
 ${color2}Kernel:${color1} $kernel
 ${color2}Load:${color1} ${loadavg}
-]]
 
+${color2}Disk Usage:${color1}
+${color2}Total:${color1} ${fs_used /}/${fs_size /}
+${color2}Free:${color1} ${fs_free /}
+]]
