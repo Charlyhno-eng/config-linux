@@ -1,4 +1,8 @@
 {
+  // Désactive le formatage global à la sauvegarde,
+  // mais sera réactivé par langage ci‑après.
+  "format_on_save": "off",
+
   "features": {
     "edit_prediction_provider": "supermaven"
   },
@@ -12,7 +16,7 @@
       "provider": "google",
       "model": "gemini-2.0-flash"
     },
-    "default_profile": "ask"
+    "default_profile": "write"
   },
   "language_models": {
     "google": {
@@ -50,6 +54,64 @@
     "git_gutter": "tracked_files",
     "inline_blame": {
       "enabled": true
+    }
+  },
+
+  //////////////////////////////////////
+  // CONFIGURATION SPÉCIFIQUE AUX LANGAGES
+  //////////////////////////////////////
+  "languages": {
+    "TypeScript": {
+      // Utiliser Prettier pour formater automatiquement
+      "tab_size": 2,
+      "soft_wrap": "none",
+      "formatter": {
+        "external": {
+          "command": "prettier",
+          "arguments": ["--stdin-filepath", "{buffer_path}"]
+        }
+      },
+      "format_on_save": "on",
+      "show_completions_on_input": true,
+      "show_completion_documentation": true,
+      "preferred_line_length": 120,
+      // Applique les corrections ESLint après format
+      "code_actions_on_format": {
+        "source.fixAll.eslint": true
+      }
+    },
+    "Rust": {
+      // Code Rust avec tabulations de 4 espaces
+      "tab_size": 4,
+      "hard_tabs": false,
+      // Utiliser rust-analyzer pour formater et lint
+      "formatter": "language_server",
+      "format_on_save": "on",
+      // Priorise rust-analyzer
+      "language_servers": ["rust-analyzer"]
+    }
+  },
+
+  //////////////////////////////////////
+  // CONFIGURATION LSP (Language Server Protocol)
+  //////////////////////////////////////
+  "lsp": {
+    // Configuration pour TypeScript
+    "typescript-language-server": {
+      "initialization_options": {
+        "preferences": {
+          "strictNullChecks": true,
+          "target": "ES2020"
+        }
+      }
+    },
+    // Configuration pour Rust Analyzer : utilise Clippy
+    "rust-analyzer": {
+      "initialization_options": {
+        "check": {
+          "command": "clippy"
+        }
+      }
     }
   }
 }
