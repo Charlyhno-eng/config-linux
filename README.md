@@ -61,6 +61,9 @@ These are the terminal tools I use regularly, chosen for their performance, usab
 - **zsh**
   A powerful and extensible shell that replaces Bash. Offers advanced autocompletion, globbing, and theming (commonly used with Oh My Zsh or Prezto).
 
+- **LazyDocker**
+  A simple terminal UI for Docker and Docker Compose. Allows you to manage containers, images, volumes, and networks with a clean and interactive interface, without memorizing CLI commands.
+
 - **fzf**
   A general-purpose fuzzy finder. Great for quickly searching files, history, Git branches, etc. Can be integrated with many shell commands and workflows.
 
