@@ -105,6 +105,7 @@ alias ga='git add .'
 alias gc='git commit -m'
 alias gp='git push'
 alias gpl='git pull'
+alias gacp='git add . && git commit -m "advancement" && git push'
 
 # Dev alias python
 alias pythonenv='python3 -m venv .venv && source .venv/bin/activate'
@@ -125,6 +126,7 @@ alias cclean='cargo clean'
 alias nextnew='npx create-next-app@latest'
 alias nextdev='npm run dev'
 alias nextbuild='npm run build'
+alias studio='npx prisma studio'
 
 # Prompt multicouleur plus lisible (si pas de powerlevel10k)
 autoload -U colors && colors
