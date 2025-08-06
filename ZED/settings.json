@@ -1,8 +1,5 @@
 {
-  // Désactive le formatage global à la sauvegarde,
-  // mais sera réactivé par langage ci‑après.
   "format_on_save": "off",
-
   "features": {
     "edit_prediction_provider": "supermaven"
   },
@@ -36,6 +33,12 @@
   "hide_mouse": "on_typing_and_movement",
   "show_edit_predictions": true,
   "theme": "Rosé Pine",
+
+  "ui_font_size": 12,
+  "ui_font_weight": 400,
+  "buffer_font_size": 9,
+  "buffer_font_weight": 400,
+
   "telemetry": {
     "metrics": false,
     "diagnostics": false
@@ -57,12 +60,8 @@
     }
   },
 
-  //////////////////////////////////////
-  // CONFIGURATION SPÉCIFIQUE AUX LANGAGES
-  //////////////////////////////////////
   "languages": {
     "TypeScript": {
-      // Utiliser Prettier pour formater automatiquement
       "tab_size": 2,
       "soft_wrap": "none",
       "formatter": {
@@ -75,28 +74,20 @@
       "show_completions_on_input": true,
       "show_completion_documentation": true,
       "preferred_line_length": 120,
-      // Applique les corrections ESLint après format
       "code_actions_on_format": {
         "source.fixAll.eslint": true
       }
     },
     "Rust": {
-      // Code Rust avec tabulations de 4 espaces
       "tab_size": 4,
       "hard_tabs": false,
-      // Utiliser rust-analyzer pour formater et lint
       "formatter": "language_server",
       "format_on_save": "on",
-      // Priorise rust-analyzer
       "language_servers": ["rust-analyzer"]
     }
   },
 
-  //////////////////////////////////////
-  // CONFIGURATION LSP (Language Server Protocol)
-  //////////////////////////////////////
   "lsp": {
-    // Configuration pour TypeScript
     "typescript-language-server": {
       "initialization_options": {
         "preferences": {
@@ -105,7 +96,6 @@
         }
       }
     },
-    // Configuration pour Rust Analyzer : utilise Clippy
     "rust-analyzer": {
       "initialization_options": {
         "check": {
