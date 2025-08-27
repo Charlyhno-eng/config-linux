@@ -111,6 +111,8 @@ alias readme='git add . && git commit -m "readme" && git push'
 -
 # Dev alias python
 alias pythonenv='python3 -m venv .venv && source .venv/bin/activate'
+alias unicorn='uvicorn main:app --reload'
+alias pythonlib='pip install -r requirements.txt'
 
 # Dev alias rust
 alias cb='cargo build'
