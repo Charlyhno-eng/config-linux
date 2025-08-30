@@ -83,54 +83,50 @@ alias ..='cd ..'
 alias ...='cd ../..'
 alias grep='grep --color=auto'
 
-# Custom alias
+# Basique custom - Alias
 alias update='sudo apt update && sudo apt upgrade'
 alias install='sudo apt install'
 alias remove='sudo apt remove'
 alias c='clear'
 alias cat='batcat'
-alias szsh='source ~/.zshrc'
-alias gozsh='nano ~/.zshrc'
 alias top='btop'
 
-alias kittyconf='nano ~/.config/kitty/kitty.conf'
+# Raccourcis arborescence - Alias
 alias docs='cd ~/Documents'
 alias projets='cd ~/Documents/Projets'
 alias techno='mpv --shuffle --loop-playlist ~/Musique/Techno/*.mp3'
 alias chill='mpv --shuffle --loop-playlist ~/Musique/Chill/*.mp3'
 
-# Git alias
+# Fichiers de config - Alias
+alias kittyconf='nano ~/.config/kitty/kitty.conf'
+alias szsh='source ~/.zshrc'
+alias gozsh='nano ~/.zshrc'
+
+# Git - Alias
 alias gs='git status'
 alias ga='git add .'
 alias gc='git commit -m'
 alias gp='git push'
 alias gpl='git pull'
+
 alias gacp='git add . && git commit -m "advancement" && git push'
-alias refactor='git add . && git commit -m "refactoring" && git push'
-alias readme='git add . && git commit -m "readme" && git push'
--
-# Dev alias python
+alias g-refactor='git add . && git commit -m "refactoring" && git push'
+alias g-bug='git add . && git commit -m "bug correction" && git push'
+alias g-readme='git add . && git commit -m "readme" && git push'
+
+# Dev python - Alias
 alias pythonenv='python3 -m venv .venv && source .venv/bin/activate'
 alias unicorn='uvicorn main:app --reload'
 alias pythonlib='pip install -r requirements.txt'
 
-# Dev alias rust
-alias cb='cargo build'
-alias cbr='cargo build --release'
-alias cr='cargo run'
-alias ct='cargo test'
-alias cc='cargo check'
-alias cl='cargo clippy'
-alias cf='cargo fmt'
-alias cu='cargo update'
-alias cdoc='cargo doc --open'
-alias cclean='cargo clean'
-
-# Dev alias nextjs
+# Dev nextjs - Alias
 alias nextnew='npx create-next-app@latest'
 alias nextdev='npm run dev'
 alias nextbuild='npm run build'
 alias studio='npx prisma studio'
+
+# Crypto - Alias
+alias crypto='cointo'
 
 # Prompt multicouleur plus lisible (si pas de powerlevel10k)
 autoload -U colors && colors
