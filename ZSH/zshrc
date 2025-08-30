@@ -126,7 +126,7 @@ alias nextbuild='npm run build'
 alias studio='npx prisma studio'
 
 # Crypto - Alias
-alias crypto='cointo'
+alias crypto='cointop'
 
 # Prompt multicouleur plus lisible (si pas de powerlevel10k)
 autoload -U colors && colors
