@@ -8,6 +8,22 @@ sudo apt update && sudo apt upgrade -y
 echo "=== Installing essential terminal tools ==="
 sudo apt install -y zsh fzf bat tldr mpv cava lsd conky curl git
 
+echo "=== Installing btop ==="
+sudo apt install -y btop
+
+echo "=== Installing cointop ==="
+if ! command -v cointop &> /dev/null; then
+    curl -s https://api.github.com/repos/cointop-sh/cointop/releases/latest \
+    | grep "browser_download_url.*linux-amd64" \
+    | cut -d '"' -f 4 \
+    | wget -qi - -O /tmp/cointop.tar.gz
+    tar -xzf /tmp/cointop.tar.gz -C /tmp
+    sudo mv /tmp/cointop /usr/local/bin/
+    rm /tmp/cointop.tar.gz
+else
+    echo "cointop is already installed."
+fi
+
 echo "=== Creating alias for batcat if needed ==="
 if ! command -v bat &> /dev/null; then
     echo "alias bat='batcat'" >> ~/.bashrc
@@ -49,5 +65,12 @@ tldr --update
 
 echo "=== Installing Zed code editor ==="
 curl -f https://zed.dev/install.sh | sh
+
+echo "=== Installing Node.js (LTS) ==="
+curl -fsSL https://deb.nodesource.com/setup_lts.x | sudo -E bash -
+sudo apt install -y nodejs
+
+echo "=== Installing Python 3 and pip ==="
+sudo apt install -y python3 python3-pip python3-venv
 
 echo "=== Installation completed! Restart your terminal or log out/in to apply all changes. ==="
