@@ -115,9 +115,10 @@ alias g-bug='git add . && git commit -m "bug correction" && git push'
 alias g-readme='git add . && git commit -m "readme" && git push'
 
 # Dev python - Alias
-alias pythonenv='python3 -m venv .venv && source .venv/bin/activate'
+alias penv='python3 -m venv .venv && source .venv/bin/activate'
+alias plib='pip install -r requirements.txt'
+alias pinstall='pip install'
 alias unicorn='uvicorn main:app --reload'
-alias pythonlib='pip install -r requirements.txt'
 
 # Dev nextjs - Alias
 alias nextnew='npx create-next-app@latest'
