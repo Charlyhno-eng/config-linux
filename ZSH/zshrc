@@ -127,6 +127,9 @@ alias nextdev='npm run dev'
 alias nextbuild='npm run build'
 alias studio='npx prisma studio'
 
+# OSINT - Alias
+alias osint-sherlock='cd ~/Documents/Penteste/sherlock && python3 -m venv .venv && source .venv/bin/activate && sherlock'
+
 # Crypto - Alias
 alias crypto='cointop'
 
