@@ -119,7 +119,7 @@ alias p='python'
 alias penv='python3 -m venv .venv && source .venv/bin/activate'
 alias plib='pip install -r requirements.txt'
 alias pinstall='pip install'
-alias unicorn='uvicorn main:app --reload'
+alias uvicorn='uvicorn main:app --reload'
 
 # Dev nextjs - Alias
 alias nextnew='npx create-next-app@latest'
