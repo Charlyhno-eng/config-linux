@@ -7,9 +7,9 @@
   },
   {
     "context": "Editor",
+    "use_key_equivalents": false,
     "bindings": {
-      "ctrl-y": "assistant::InlineAssist"
+      "ctrl-/": ["editor::ToggleComments", { "advance_downwards": false }] // ctrl + shift + /
     }
   }
 ]
- 

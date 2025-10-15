@@ -46,6 +46,10 @@ Set "theme": "Rosé Pine" in .config/zed/settings.json
 
 ![Zed](public/ide_zed.png)
 
+Zed extensions :
+
+![Zed extension](public/zed_extensions.png)
+
 > Note: More customization details to be added if configuration files are exported.
 
 ---

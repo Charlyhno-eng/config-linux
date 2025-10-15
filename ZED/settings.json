@@ -1,5 +1,5 @@
 {
-  "format_on_save": "off",
+  // AI
   "features": {
     "edit_prediction_provider": "supermaven"
   },
@@ -26,25 +26,37 @@
       ]
     }
   },
-  "toolbar": {
-    "quick_actions": false,
-    "selections_menu": false
-  },
-  "hide_mouse": "on_typing_and_movement",
-  "show_edit_predictions": true,
-  "theme": "Rosé Pine",
+  // Autosave
+  "format_on_save": "on",
 
+  // Appearance
+  "icon_theme": "Material Icon Theme",
   "ui_font_size": 12,
   "ui_font_weight": 400,
   "buffer_font_size": 9,
   "buffer_font_weight": 400,
+  "hide_mouse": "on_typing_and_movement",
+  "show_edit_predictions": true,
+  "theme": "Rosé Pine",
 
-  "telemetry": {
-    "metrics": false,
-    "diagnostics": false
+  "toolbar": {
+    "quick_actions": false,
+    "selections_menu": false
   },
   "scrollbar": {
     "show": "never"
+  },
+  "tab_bar": {
+    "show": true,
+    "show_nav_history_buttons": false
+  },
+  "collaboration_panel": {
+    "dock": "left",
+    "button": false
+  },
+  "notification_panel": {
+    "dock": "left",
+    "button": false
   },
   "indent_guides": {
     "enabled": true,
@@ -53,6 +65,26 @@
   "preview_tabs": {
     "enabled": false
   },
+  "max_tabs": 6,
+
+  // Error lens
+  "diagnostics": {
+    "button": true,
+    "include_warnings": true,
+    "inline": {
+      "enabled": false,
+      "update_debounce_ms": 150,
+      "padding": 4,
+      "min_column": 0,
+      "max_severity": null
+    }
+  },
+
+  // Others
+  "telemetry": {
+    "metrics": false,
+    "diagnostics": false
+  },
   "git": {
     "git_gutter": "tracked_files",
     "inline_blame": {
@@ -60,48 +92,56 @@
     }
   },
 
+  // Languages
   "languages": {
     "TypeScript": {
-      "tab_size": 2,
-      "soft_wrap": "none",
-      "formatter": {
-        "external": {
-          "command": "prettier",
-          "arguments": ["--stdin-filepath", "{buffer_path}"]
-        }
-      },
-      "format_on_save": "on",
-      "show_completions_on_input": true,
-      "show_completion_documentation": true,
-      "preferred_line_length": 120,
+      "formatter": "prettier",
       "code_actions_on_format": {
-        "source.fixAll.eslint": true
+        "source.organizeImports": true,
+        "source.fixAll.eslint": true,
+        "source.removeUnusedmports": true
       }
     },
-    "Rust": {
-      "tab_size": 4,
-      "hard_tabs": false,
-      "formatter": "language_server",
-      "format_on_save": "on",
-      "language_servers": ["rust-analyzer"]
+    "JavaScript": {
+      "language_servers": ["typescript-language-server", "eslint"],
+      "formatter": "prettier",
+      "code_actions_on_format": {
+        "source.organizeImports": true,
+        "source.fixAll.eslint": true,
+        "source.removeUnusedmports": true
+      }
+    },
+    "TSX": {
+      "formatter": "prettier",
+      "code_actions_on_format": {
+        "source.organizeImports": true,
+        "source.fixAll.eslint": true,
+        "source.removeUnusedmports": true
+      }
     }
   },
 
-  "lsp": {
-    "typescript-language-server": {
-      "initialization_options": {
-        "preferences": {
-          "strictNullChecks": true,
-          "target": "ES2020"
-        }
-      }
-    },
-    "rust-analyzer": {
-      "initialization_options": {
-        "check": {
-          "command": "clippy"
-        }
-      }
-    }
-  }
+  // File scan exclusion
+  "file_scan_exclusions": [
+    "**/.conductor",
+    "**/.git",
+    "**/.svn",
+    "**/.hg",
+    "**/CVS",
+    "**/.DS_Store",
+    "**/Thumbs.db",
+    "**/.classpath",
+    "**/.settings",
+    "**/out",
+    "**/dist",
+    "**/.husky",
+    "**/.turbo",
+    "**/.vscode",
+    "**/.next",
+    "**/.storybook",
+    "**/.tap",
+    "**/.nyc_output",
+    "**/.report",
+    "**/node_modules"
+  ]
 }
