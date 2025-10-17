@@ -40,10 +40,6 @@ The widget to track CPU, cores, RAM, root disk and network was created via conky
 
 ### Zed theme
 
-Place theme.json into .config/zed/themes folder
-
-Set "theme": "Rosé Pine" in .config/zed/settings.json
-
 ![Zed](public/tokyo_night_theme.png)
 
 Zed extensions :
