@@ -44,7 +44,7 @@ Place theme.json into .config/zed/themes folder
 
 Set "theme": "Rosé Pine" in .config/zed/settings.json
 
-![Zed](public/ide_zed.png)
+![Zed](public/tokyo_night_theme.png)
 
 Zed extensions :
 

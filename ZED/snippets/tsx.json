@@ -1,0 +1,16 @@
+{
+  "React Function Component (MUI Box)": {
+    "prefix": "rfce",
+    "body": [
+      "import React from 'react';",
+      "import { Box } from '@mui/material';",
+      "",
+      "export default function ${1:ComponentName}() {",
+      "  return (",
+      "    <Box>${2}</Box>",
+      "  );",
+      "}"
+    ],
+    "description": "React Function Component with MUI Box and inline export"
+  }
+}
