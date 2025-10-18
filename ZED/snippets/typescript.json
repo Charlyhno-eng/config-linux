@@ -1,0 +1,36 @@
+{
+  "Console Log": {
+    "prefix": "clg",
+    "body": ["console.log(${1:variable});"],
+    "description": "Console log shortcut"
+  },
+
+  "Try Catch": {
+    "prefix": "trycatch",
+    "body": [
+      "try {",
+      "  ${1:// code à exécuter}",
+      "} catch (error) {",
+      "  console.error(error);",
+      "}"
+    ],
+    "description": "Try/Catch block"
+  },
+
+  "Switch Case": {
+    "prefix": "switchcase",
+    "body": [
+      "switch (${1:variable}) {",
+      "  case ${2:valeur1}:",
+      "    ${3:// code pour le cas 1}",
+      "    break;",
+      "  case ${4:valeur2}:",
+      "    ${5:// code pour le cas 2}",
+      "    break;",
+      "  default:",
+      "    ${6:// code par défaut}",
+      "}"
+    ],
+    "description": "Switch/Case statement"
+  }
+}

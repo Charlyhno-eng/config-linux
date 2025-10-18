@@ -12,5 +12,73 @@
       "}"
     ],
     "description": "React Function Component with MUI Box and inline export"
+  },
+
+  "useState Hook": {
+    "prefix": "usestate",
+    "body": [
+      "const [${1:state}, set${2:State}] = React.useState(${3:initialValue});"
+    ],
+    "description": "Create a useState hook"
+  },
+
+  "useEffect Hook": {
+    "prefix": "useeffect",
+    "body": [
+      "useEffect(() => {",
+      "  ${1:// effet ou logique ici}",
+      "}, [${2:dependencies}]);"
+    ],
+    "description": "Create a useEffect hook"
+  },
+
+  "Fetch API": {
+    "prefix": "fetch",
+    "body": [
+      "try {",
+      "  const response = await fetch('${1:/api/endpoint}');",
+      "  if (!response.ok) throw new Error('Erreur réseau');",
+      "  const data = await response.json();",
+      "  console.log(data);",
+      "} catch (error) {",
+      "  console.error('Erreur de fetch :', error);",
+      "}"
+    ],
+    "description": "Fetch API with error handling"
+  },
+
+  "Console Log": {
+    "prefix": "clg",
+    "body": ["console.log(${1:variable});"],
+    "description": "Console log shortcut"
+  },
+
+  "Try Catch": {
+    "prefix": "trycatch",
+    "body": [
+      "try {",
+      "  ${1:// code à exécuter}",
+      "} catch (error) {",
+      "  console.error(error);",
+      "}"
+    ],
+    "description": "Try/Catch block"
+  },
+
+  "Switch Case": {
+    "prefix": "switchcase",
+    "body": [
+      "switch (${1:variable}) {",
+      "  case ${2:valeur1}:",
+      "    ${3:// code pour le cas 1}",
+      "    break;",
+      "  case ${4:valeur2}:",
+      "    ${5:// code pour le cas 2}",
+      "    break;",
+      "  default:",
+      "    ${6:// code par défaut}",
+      "}"
+    ],
+    "description": "Switch/Case statement"
   }
 }
