@@ -49,6 +49,9 @@ POWERLEVEL9K_TIME_BACKGROUND='#321959'
 POWERLEVEL9K_TIME_FOREGROUND='#ea00d9'
 POWERLEVEL9K_TIME_FORMAT='%D{%H:%M}'
 
+# Go blue print
+GOPATH=$HOME/go  PATH=$PATH:/usr/local/go/bin:$GOPATH/bin
+
 # Plugins Oh My Zsh
 plugins=(
   git
@@ -126,6 +129,9 @@ alias nextnew='npx create-next-app@latest'
 alias nextdev='npm run dev'
 alias nextbuild='npm run build'
 alias studio='npx prisma studio'
+
+# Dev golang - Alias
+alias goproject='go-blueprint create'
 
 # OSINT - Alias
 alias osint-sherlock='cd ~/Documents/Penteste/sherlock && python3 -m venv .venv && source .venv/bin/activate && sherlock'
