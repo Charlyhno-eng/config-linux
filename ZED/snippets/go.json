@@ -1,0 +1,43 @@
+{
+  "If Error Check": {
+    "prefix": "err",
+    "body": [
+      "if err != nil {",
+      "         ${1:// handle error}",
+      "         return ${2:err}",
+      "     }"
+    ],
+    "description": "Check if err is not nil and handle it"
+  },
+
+  "For Range": {
+    "prefix": "forof",
+    "body": [
+      "for _, ${1:item} := range ${2:collection} {",
+      "      ${3:// code here}",
+      "    }"
+    ],
+    "description": "For loop with range iteration"
+  },
+
+  "Println": {
+    "prefix": "clg",
+    "body": ["fmt.Println(${1:\"message\"})"],
+    "description": "Print output with fmt.Println"
+  },
+
+  "Switch Case": {
+    "prefix": "switchcase",
+    "body": [
+      "switch ${1:variable} {",
+      "    case ${2:value1}:",
+      "        ${3}",
+      "    case ${4:value2}:",
+      "        ${5}",
+      "    default:",
+      "        ${6}",
+      "}"
+    ],
+    "description": "Switch statement with two cases and a default"
+  }
+}
