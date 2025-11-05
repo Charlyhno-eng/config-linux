@@ -112,10 +112,11 @@ alias gc='git commit -m'
 alias gp='git push'
 alias gpl='git pull'
 
-alias gacp='git add . && git commit -m "advancement" && git push'
-alias g-refactor='git add . && git commit -m "refactoring" && git push'
-alias g-bug='git add . && git commit -m "bug correction" && git push'
-alias g-readme='git add . && git commit -m "readme" && git push'
+gacp() {
+  git add .
+  git commit -m "$*"
+  git push
+}
 
 # Dev python - Alias
 alias p='python'
