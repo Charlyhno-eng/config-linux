@@ -28,6 +28,8 @@ echo "==> Installation de Zsh, bat, mpv, cava, btop, polybar"
 
 apt install -y zsh bat mpv cava curl git btop polybar || apt install -y zsh batcat mpv cava curl git btop
 
+apt install keepassxc sqlitebrowser
+
 echo "==> Définir zsh comme shell par défaut pour l'utilisateur courant"
 chsh -s /usr/bin/zsh "$SUDO_USER"
 
