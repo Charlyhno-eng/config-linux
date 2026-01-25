@@ -1,8 +1,5 @@
 {
-  // AI
-  "features": {
-    "edit_prediction_provider": "supermaven"
-  },
+  // ------------------- AI --------------------
   "agent": {
     "always_allow_tool_actions": true,
     "default_model": {
@@ -13,7 +10,7 @@
       "provider": "google",
       "model": "gemini-2.0-flash"
     },
-    "default_profile": "write"
+    "default_profile": "ask"
   },
   "language_models": {
     "google": {
@@ -26,10 +23,26 @@
       ]
     }
   },
-  // Autosave
-  "format_on_save": "on",
 
-  // Appearance
+  // -------------- IDE experience--------------
+  "format_on_save": "on",
+  "show_completion_documentation": true,
+  "scroll_sensitivity": 3,
+
+  // Error lens
+  "diagnostics": {
+    "button": true,
+    "include_warnings": true,
+    "inline": {
+      "enabled": false,
+      "update_debounce_ms": 150,
+      "padding": 4,
+      "min_column": 0,
+      "max_severity": null
+    }
+  },
+
+  // --------------- Appearance ----------------
   "icon_theme": "Material Icon Theme",
   "ui_font_size": 12,
   "ui_font_weight": 400,
@@ -37,18 +50,20 @@
   "buffer_font_weight": 400,
   "hide_mouse": "on_typing_and_movement",
   "show_edit_predictions": true,
-  "theme": "Tokyo Night",
+  "theme": "Phantom Nebula",
 
   "toolbar": {
     "quick_actions": false,
-    "selections_menu": false
+    "selections_menu": false,
+    "breadcrumbs": false
   },
   "scrollbar": {
     "show": "never"
   },
   "tab_bar": {
     "show": true,
-    "show_nav_history_buttons": false
+    "show_nav_history_buttons": false,
+    "show_tab_bar_buttons": false
   },
   "collaboration_panel": {
     "dock": "left",
@@ -67,20 +82,7 @@
   },
   "max_tabs": 6,
 
-  // Error lens
-  "diagnostics": {
-    "button": true,
-    "include_warnings": true,
-    "inline": {
-      "enabled": false,
-      "update_debounce_ms": 150,
-      "padding": 4,
-      "min_column": 0,
-      "max_severity": null
-    }
-  },
-
-  // Others
+  // ----------------- Others ------------------
   "telemetry": {
     "metrics": false,
     "diagnostics": false
@@ -92,7 +94,7 @@
     }
   },
 
-  // Languages
+  // --------------- Languages ---------------
   "languages": {
     "TypeScript": {
       "formatter": "prettier",
@@ -121,7 +123,7 @@
     }
   },
 
-  // File scan exclusion
+  // ---------- File scan exclusion ----------
   "file_scan_exclusions": [
     "**/.conductor",
     "**/.git",
