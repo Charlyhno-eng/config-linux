@@ -7,7 +7,7 @@
       "name": "Phantom Nebula",
       "appearance": "dark",
       "style": {
-        "background": "#02023570",
+        "background": "#020235aa",
         "border": "#02023500",
         "border.disabled": "#02023500",
         "border.focused": "#02023500",
