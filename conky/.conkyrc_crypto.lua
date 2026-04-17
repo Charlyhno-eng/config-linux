@@ -38,4 +38,3 @@ ${font Hack:size=18}${color2}Crypto Prices:${color1}${font Hack:size=12}
 
 ${execpi 60 ~/widgets_conky/crypto_prices.sh}
 ]];
-

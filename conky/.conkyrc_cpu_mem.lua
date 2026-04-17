@@ -41,7 +41,7 @@ conky.config = {
 
 conky.text = [[
 ${color2}CPU:${color1} ${cpu cpu0}%${alignr}${cpugraph 14,240}
-${color2}CPU Temp:${color1} ${execi 10 sensors | grep 'Package id 0' | awk '{print $4}'} 
+${color2}CPU Temp:${color1} ${execi 10 sensors | grep 'Package id 0' | awk '{print $4}'}
 
 ${color2}CPU Core 1:${color1}  |${cpu cpu1}%| ${alignr}${color2}CPU Core 2:${color1}  |${cpu cpu2}%|
 ${color2}CPU Core 3:${color1}  |${cpu cpu3}%| ${alignr}${color2}CPU Core 4:${color1}  |${cpu cpu4}%|
@@ -70,4 +70,3 @@ ${color1}${top_mem name 6}${alignr}${top_mem pid 6}    ${top_mem mem 6}    ${top
 ${color1}${top_mem name 7}${alignr}${top_mem pid 7}    ${top_mem mem 7}    ${top_mem cpu 7}
 ${color1}${top_mem name 8}${alignr}${top_mem pid 8}    ${top_mem mem 8}    ${top_mem cpu 8}
 ]]
-

@@ -46,7 +46,7 @@ ${font Hack:size=18}${color2}Network${font Hack:size=12}${color}
 
 ${color2}Down:${color1} ${downspeed %s}
 
-${downspeedgraph %s 18,400 00ff00 ff0000} 
+${downspeedgraph %s 18,400 00ff00 ff0000}
 
 ${color2}Total Down:${color1} ${totaldown %s}
 ${color2}Up:${color1} ${upspeed %s}
@@ -64,4 +64,3 @@ ${color2}Public IP:${color1} ${execi 300 curl -s ipv4.icanhazip.com}
 network_interface, network_interface, network_interface,
 network_interface, network_interface, network_interface,
 network_interface, network_interface, network_interface)
-

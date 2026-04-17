@@ -25,9 +25,12 @@
   },
 
   // -------------- IDE experience--------------
-  "format_on_save": "on",
+  "format_on_save": "off",
   "show_completion_documentation": true,
   "scroll_sensitivity": 3,
+  "horizontal_scroll_margin": 2,
+  "vertical_scroll_margin": 2,
+  "close_on_file_delete": true,
 
   // Error lens
   "diagnostics": {
