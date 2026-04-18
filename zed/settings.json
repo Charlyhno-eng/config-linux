@@ -1,7 +1,9 @@
 {
   // ------------------- AI --------------------
   "agent": {
-    "always_allow_tool_actions": true,
+    "tool_permissions": {
+      "default": "allow"
+    },
     "default_model": {
       "provider": "google",
       "model": "gemini-2.0-flash"
@@ -28,8 +30,7 @@
   "format_on_save": "off",
   "show_completion_documentation": true,
   "scroll_sensitivity": 3,
-  "horizontal_scroll_margin": 2,
-  "vertical_scroll_margin": 2,
+  "vertical_scroll_margin": 12,
   "close_on_file_delete": true,
 
   // Error lens
@@ -43,6 +44,20 @@
       "min_column": 0,
       "max_severity": null
     }
+  },
+
+  // --------------- Extensions ----------------
+  "auto_install_extensions" : {
+    "dockerfile": true,
+    "git-firefly": true,
+    "html": true,
+    "latex": true,
+    "lua": true,
+    "make": true,
+    "material-icon-theme": true,
+    "rainbox-csv": true,
+    "sql": true,
+    "toml": true
   },
 
   // --------------- Appearance ----------------
@@ -72,10 +87,6 @@
     "dock": "left",
     "button": false
   },
-  "notification_panel": {
-    "dock": "left",
-    "button": false
-  },
   "indent_guides": {
     "enabled": true,
     "coloring": "indent_aware"
@@ -96,9 +107,13 @@
       "enabled": true
     }
   },
+  "auto_update": true,
 
   // --------------- Languages ---------------
   "languages": {
+    "Go": {
+      "language_servers": ["gopls"]
+    },
     "TypeScript": {
       "formatter": "prettier",
       "code_actions_on_format": {
