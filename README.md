@@ -8,8 +8,7 @@ This is my Linux Mint XFCE setup with Polybar — an ultra-lightweight configura
 
 For development, I use the Zed IDE — a fast and powerful code editor written in Rust. It’s designed for performance and responsiveness, making it perfect for both lightweight coding and large projects. Zed also supports integration with AI tools, allowing you to add your own API keys for an enhanced development experience.
 
-- **AI :** `Gemini-2.0-flash`
-- **AI extensions :** Super Maven
+![Zed theme](./public/zed_theme.png)
 
 ---
 
