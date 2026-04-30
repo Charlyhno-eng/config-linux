@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
 
+# TODO !
+# chmod +x install-tools.sh
+# ./install-tools.sh
+
 set -e
 
 # Check if the script is run as root (via sudo)
@@ -29,7 +33,11 @@ echo "==> Installing C development tools (GCC, make, etc.)"
 apt install -y build-essential
 
 echo "==> Installing Zsh, bat, mpv, cava, btop, polybar"
-apt install -y zsh bat mpv cava curl git btop polybar || apt install -y zsh batcat mpv cava curl git btop
+apt install -y zsh bat mpv cava curl git btop polybar rofi || apt install -y zsh batcat mpv cava curl git btop polybar rofi
+
+echo "==> Creating Rofi config directory and dumping config"
+mkdir -p ~/.config/rofi
+rofi -dump-config > ~/.config/rofi/config.rasi
 
 echo "==> Installing KeePassXC and SQLite Browser"
 apt install -y keepassxc sqlitebrowser

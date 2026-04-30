@@ -1,0 +1,88 @@
+configuration {
+    modi: "drun,run,window";
+    show-icons: true;
+    font: "Sans 11";
+    terminal: "xfce4-terminal";
+    drun-display-format: "{name}";
+    location: 0;
+    disable-history: false;
+    hide-scrollbar: true;
+    display-drun: "Applications";
+}
+
+/* Base settings */
+* {
+    background-color: transparent;
+    text-color: #ffffff;
+    border-color: #444488;
+}
+
+/* Main window (40% transparency) */
+window {
+    background-color: rgba(0, 0, 66, 0.4);
+    border: 2px;
+    border-color: #444488;
+    padding: 10px;
+}
+
+/* Containers */
+mainbox {
+    background-color: transparent;
+    spacing: 5px;
+}
+
+inputbar {
+    background-color: transparent;
+    text-color: #ffffff;
+    padding: 5px;
+    border: 1px;
+    border-color: #444488;
+}
+
+/* Text elements */
+prompt {
+    text-color: #88aaff;
+}
+
+entry {
+    text-color: #ffffff;
+}
+
+/* List view */
+listview {
+    background-color: transparent;
+    spacing: 4px;
+    scrollbar: false;
+}
+
+/* List elements */
+element {
+    background-color: transparent;
+    text-color: #ffffff;
+    padding: 5px;
+}
+
+element normal.normal {
+    background-color: transparent;
+    text-color: #ffffff;
+}
+
+element alternate.normal {
+    background-color: transparent;
+    text-color: #cccccc;
+}
+
+/* Selected element (slightly less transparent for visibility) */
+element selected.normal {
+    background-color: rgba(34, 34, 102, 0.6);
+    text-color: #ffffff;
+}
+
+/* Icons and text */
+element-text {
+    text-color: inherit;
+}
+
+element-icon {
+    size: 20px;
+}

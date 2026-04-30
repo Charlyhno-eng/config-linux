@@ -17,6 +17,7 @@ For development, I use the Zed IDE — a fast and powerful code editor written i
 These are the terminal tools I use regularly, chosen for their performance, usability, and modern features : I run the Kitty terminal with Oh My Zsh and the Powerlevel10k theme, which provide a fast, customizable, and visually appealing shell experience.
 
 - **zsh**
+- **rofi**
 - **LazyDocker**
 - **batcat**
 - **mpv**
