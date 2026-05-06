@@ -47,8 +47,6 @@ alias top='btop'
 # Tree view shortcuts - Alias
 alias docs='cd ~/Documents'
 alias projets='cd ~/Documents/Projets'
-alias techno='mpv --shuffle --loop-playlist ~/Musique/Techno/*.mp3'
-alias chill='mpv --shuffle --loop-playlist ~/Musique/Chill/*.mp3'
 
 # Configuration files - Alias
 alias kittyconf='nano ~/.config/kitty/kitty.conf'
@@ -72,6 +70,11 @@ gacp() {
 invest() {
   cd /home/charly/Documents/Scripts/invest-tracker-tui || return 1
   go run .
+}
+
+music() {
+  cd /home/charly/Documents/Scripts/go-cli-beat || return 1
+  go run . /home/charly/Musique/Techno/
 }
 
 # Dev python - Alias
