@@ -77,6 +77,21 @@ music() {
   go run . /home/charly/Musique/Techno/
 }
 
+vie() {
+  cd /home/charly/Documents/Scripts/VIE-scanner || return 1
+
+  python3 -m venv .venv
+  source .venv/bin/activate
+
+  trap "echo 'Arrêt du script'; return 0" INT
+
+  while true; do
+    python -m src.main
+    echo "--------------- $(date) ---------------"
+    sleep 300
+  done
+}
+
 # Dev python - Alias
 alias p='python'
 alias penv='python3 -m venv .venv && source .venv/bin/activate'
