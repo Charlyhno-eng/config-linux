@@ -35,8 +35,8 @@ apt install -y golang-go
 
 # ------------------------------------------------------------------------
 
-echo "==> Installing Zsh, bat, mpv, cava, btop, polybar"
-apt install -y zsh bat mpv cava curl btop polybar rofi || apt install -y zsh batcat mpv cava curl btop polybar rofi
+echo "==> Installing zsh, bat, mpv, cava, btop, polybar, rofi, eza, zoxide"
+apt install -y zsh bat mpv cava btop polybar rofi eza zoxide || apt install -y zsh batcat mpv cava btop polybar rofi eza zoxide
 
 echo "==> Creating Rofi config directory and dumping config"
 mkdir -p ~/.config/rofi
