@@ -47,10 +47,6 @@ alias top='btop'
 alias ls='eza'
 alias tree='eza --tree'
 
-# Tree view shortcuts - Alias
-alias docs='cd ~/Documents'
-alias projets='cd ~/Documents/Projets'
-
 # Configuration files - Alias
 alias confkitty='nano ~/.config/kitty/kitty.conf'
 alias confrofi='nano ~/.config/rofi/config.rasi'
@@ -83,12 +79,9 @@ music() {
 
 vie() {
   cd /home/charly/Documents/Scripts/VIE-scanner || return 1
-
   python3 -m venv .venv
   source .venv/bin/activate
-
   trap "echo 'Arrêt du script'; return 0" INT
-
   while true; do
     python -m src.main
     echo "--------------- $(date) ---------------"
