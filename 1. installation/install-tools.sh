@@ -35,8 +35,8 @@ sudo apt install -y golang-go
 
 # ---------------------------- Tools -----------------------------
 
-echo "==> Installing zsh, bat, mpv, cava, btop, polybar, rofi, eza, zoxide"
-sudo apt install -y zsh bat mpv cava btop polybar rofi eza zoxide
+echo "==> Installing zsh, bat, btop, polybar, rofi, eza, zoxide"
+sudo apt install -y zsh bat btop polybar rofi eza zoxide
 
 echo "==> Installing KeePassXC and SQLite Browser"
 sudo apt install -y keepassxc sqlitebrowser

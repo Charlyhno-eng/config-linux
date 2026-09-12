@@ -24,7 +24,5 @@ My daily terminal setup includes:
 - zoxide
 - yazi
 - btop
-- mpv
-- cava
 
 This repository contains my current **Linux Mint XFCE configuration**, including themes, tweaks, Polybar configuration, and the tools I use daily.
