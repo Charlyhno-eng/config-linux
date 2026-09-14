@@ -11,7 +11,7 @@ For coding, I use **Kitty** as my main terminal environment, combined with **Cod
 
 I use **Yazi** for fast and efficient terminal-based file navigation.
 
-![Kitty theme](./public/kitty_ide.png)
+![Kitty theme](./public/kitty_codex_herdr.png)
 
 
 ## Terminal Tools
