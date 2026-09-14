@@ -53,6 +53,9 @@ curl -fsSL https://yazi-rs.github.io/builds/yazi-keyring.gpg | sudo tee /usr/sha
 echo 'deb [signed-by=/usr/share/keyrings/yazi-keyring.gpg] https://yazi-rs.github.io/builds/ stable main' | sudo tee /etc/apt/sources.list.d/yazi.list >/dev/null
 sudo apt update && sudo apt install yazi
 
+echo "==> Installing rclone (synchronization with drive"
+sudo -v ; curl https://rclone.org/install.sh | sudo bash
+
 # --------------------------- AI Tools ---------------------------
 
 echo "==> Installing dependencies for Handy"
