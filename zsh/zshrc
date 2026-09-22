@@ -46,6 +46,7 @@ alias cat='batcat'
 alias top='btop'
 alias ls='eza'
 alias tree='eza --tree'
+alias blackscreen='xset dpms force off'
 
 # Configuration files - Alias
 alias confkitty='nano ~/.config/kitty/kitty.conf'
