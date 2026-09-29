@@ -2,7 +2,7 @@
 
 My lightweight **Linux Mint XFCE** setup with **Polybar** and **Rofi**, focused on performance, simplicity, and a clean workflow.
 
-The system uses around **1.05 GB of RAM at idle**, keeping the desktop fast and lightweight.
+The system uses around **1.02 GB of RAM at idle**, keeping the desktop fast and lightweight.
 
 
 ## Kitty as IDE
