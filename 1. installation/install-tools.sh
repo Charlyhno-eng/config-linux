@@ -68,6 +68,14 @@ curl -fsSL https://herdr.dev/install.sh | sh
 echo "==> Installing Codex"
 npm install -g @openai/codex
 
+echo "==> Installing LazyIDE"
+curl -fsSL https://tysonlabs.dev/lazyide/install.sh | sh
+
+# --------------------------- Local AI ---------------------------
+
+echo "==> Installing dependencies for Llama.cpp"
+sudo apt install -y git cmake build-essential
+
 # --------------------------- Settings ---------------------------
 
 echo "==> Setting zsh as the default shell for the current user"
@@ -118,3 +126,4 @@ echo "Handy : https://github.com/cjpais/Handy/releases"
 echo "SyncThing : https://github.com/syncthing/syncthing/releases"
 echo "Obsidian : https://obsidian.md/help/install"
 echo "Kitty : https://sw.kovidgoyal.net/kitty/binary/"
+echo "Llama.cpp : git clone https://github.com/ggml-org/llama.cpp.git"
