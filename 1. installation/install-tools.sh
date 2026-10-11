@@ -74,7 +74,7 @@ curl -fsSL https://tysonlabs.dev/lazyide/install.sh | sh
 # --------------------------- Local AI ---------------------------
 
 echo "==> Installing dependencies for Llama.cpp"
-sudo apt install -y git cmake build-essential
+sudo apt install -y git cmake build-essential spirv-headers glslc glslang-tools
 
 # --------------------------- Settings ---------------------------
 
@@ -126,4 +126,4 @@ echo "Handy : https://github.com/cjpais/Handy/releases"
 echo "SyncThing : https://github.com/syncthing/syncthing/releases"
 echo "Obsidian : https://obsidian.md/help/install"
 echo "Kitty : https://sw.kovidgoyal.net/kitty/binary/"
-echo "Llama.cpp : git clone https://github.com/ggml-org/llama.cpp.git"
+echo "ik-Llama.cpp : https://github.com/ikawrakow/ik_llama.cpp"
