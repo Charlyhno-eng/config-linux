@@ -84,8 +84,6 @@ diagram() {
 }
 
 # Dev - Alias
-alias codeauto='codex -c sandbox_workspace_write.network_access=true --sandbox workspace-write --ask-for-approval never'
-
 alias p='python'
 alias penv='python3 -m venv .venv && source .venv/bin/activate'
 alias plib='pip install -r requirements.txt'
